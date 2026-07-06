@@ -139,7 +139,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const currentUser = JSON.parse(sessionStorage.getItem('cc_user')) || { username: 'You', role: 'Student' };
 
         const fetchAndRenderPosts = () => {
-            fetch('/api/forum/posts')
+            fetch('/api/forum/posts.js')
                 .then(res => res.json())
                 .then(posts => {
                     renderPosts(posts);
@@ -240,7 +240,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     time: 'Just now'
                 };
 
-                fetch('/api/forum/posts', {
+                fetch('/api/forum/posts.js', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json'
@@ -293,7 +293,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 you: true
             };
 
-            fetch(`/api/forum/posts/${postId}/replies`, {
+            fetch(`/api/forum/posts/replies.js?postId=${postId}`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
@@ -329,7 +329,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             const userData = { username, email, password, role };
 
-            fetch('/api/auth/register', {
+            fetch('/api/auth/register.js', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
