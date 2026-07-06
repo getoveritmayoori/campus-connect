@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Connect - Register</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <canvas class="canvas-bg" id="network-canvas"></canvas>
+
+    <header>
+        <div class="nav-container">
+            <a href="index.html" class="logo">CAMPUS CONNECT</a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="register.html" class="active">Register</a></li>
+                    <li><a href="forum.html">Forum</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+                <a href="register.html" class="btn-join">Join Now</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="register-container">
+        <div class="register-card">
+            <div class="register-form-side">
+                <h2 class="register-title">Create Account</h2>
+                <p class="register-subtitle">Already have an account? <a href="#">Sign in</a></p>
+                
+                <form id="registerForm">
+                    <div class="form-group">
+                        <label class="form-label" for="username">Username</label>
+                        <input type="text" id="username" class="form-input" placeholder="Enter your name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="form-label" for="email">Email</label>
+                        <input type="email" id="email" class="form-input" placeholder="example@gmail.com" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="form-label" for="password">Password</label>
+                        <input type="password" id="password" class="form-input" placeholder="********" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="form-label">Choose your role:</label>
+                        <div class="role-selector">
+                            <label class="role-option">
+                                <input type="radio" name="role" value="junior" checked>
+                                <span class="custom-radio"></span>
+                                Junior
+                            </label>
+                            <label class="role-option">
+                                <input type="radio" name="role" value="senior">
+                                <span class="custom-radio"></span>
+                                Senior
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <button type="submit" class="btn-register">Register</button>
+                </form>
+            </div>
+            
+            <div class="register-art-side">
+                <div class="register-avatar-container">
+                    <img src="images/register-avatar.jpg" alt="Student Avatar" class="register-avatar-img">
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/script.js?v=3"></script>
+</body>
+</html>

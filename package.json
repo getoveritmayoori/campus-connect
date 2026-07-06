@@ -1,0 +1,17 @@
+{
+  "name": "campus-connect",
+  "version": "1.0.0",
+  "description": "Campus Connect - A student community platform",
+  "private": true,
+  "scripts": {
+    "dev": "vercel dev",
+    "build": "echo 'No build step needed'",
+    "start": "vercel dev"
+  },
+  "dependencies": {
+    "mongodb": "^6.12.0"
+  },
+  "devDependencies": {
+    "vercel": "^44.0.0"
+  }
+}

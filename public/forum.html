@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Connect - Forum</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+            <a href="index.html" class="logo">CAMPUS CONNECT</a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="register.html">Register</a></li>
+                    <li><a href="forum.html" class="active">Forum</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+                <a href="register.html" class="btn-join">Join Now</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="forum-container">
+        <div class="forum-header">
+            <h2 class="forum-title">Campus Connect Forum 💬</h2>
+            <p class="forum-subtitle">Start discussions, ask questions, and collaborate with your peers!</p>
+        </div>
+
+        <div class="new-post-card">
+            <input type="text" id="postTitle" class="post-input-title" placeholder="Enter your topic title...">
+            <textarea id="postBody" class="post-input-body" placeholder="Write your post..."></textarea>
+            <div class="btn-post-container">
+                <button id="btnPost" class="btn-blue">Post</button>
+            </div>
+        </div>
+
+        <div class="posts-list" id="postsList">
+            <!-- Posts will be dynamically inserted here by script.js -->
+        </div>
+    </main>
+
+    <script src="js/script.js?v=3"></script>
+</body>
+</html>
