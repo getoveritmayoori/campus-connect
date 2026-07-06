@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    { "source": "/api/auth/register", "destination": "/api/auth/register.js" },
+    { "source": "/api/auth/login", "destination": "/api/auth/login.js" },
+    { "source": "/api/forum/posts", "destination": "/api/forum/posts.js" },
+    { "source": "/api/forum/posts/:postId/replies", "destination": "/api/forum/posts/[postId]/replies.js" }
+  ]
+}
